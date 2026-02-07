@@ -1,0 +1,35 @@
+{
+    "env_name": "InvertedPendulum-v5",
+    "ccfdm_embed_dim": 128,
+    "ccfdm_lr": 0.001,
+    "update_key_every_steps": 10,
+    "key_tau": 0.01,
+    "obs_stack": 3,
+    "action_repeat": 1,
+    "buffer_capacity": 50000,
+    "batch_size": 128,
+    "policy_hidden_dims": [
+        256,
+        256
+    ],
+    "policy_optimizer_lr": 0.0003,
+    "policy_max_grad_norm": Infinity,
+    "critic_hidden_dims": [
+        256,
+        256
+    ],
+    "critic_optimizer_lr": 0.0005,
+    "critic_max_grad_norm": Infinity,
+    "n_warmup_batches": 10,
+    "update_target_every_steps": 1,
+    "critic_tau": 0.005,
+    "checkpoint_freq": 100,
+    "device": "cuda",
+    "pixel": false,
+    "img_size": [
+        100,
+        100
+    ],
+    "black_and_white": true,
+    "seed": 42
+}
